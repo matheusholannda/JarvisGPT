@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    /*Espaço interno do elemento*/
+    padding: 0;
+    /*Espaço externo do elemento*/
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /*Colocar um tipo de fonte para os textos*/
+}
+
+/*é boa prática criar fora do root?*/
+:root {
+    --branco: #ffffff;
+    --vermelhoComOpacidade: #ecdfdf;
+    --preto: #000000;
+    --cinza: #8d8d8d;
+    --curvatura: 7px;
+}
+
+body {
+    background-color: var(--vermelhoComOpacidade);
+}
+
+
+/* Estilização referente a página do Elvis */
+.subtitulo {
+    font-size: 20px;
+    color: red;
+}
+
+#id_h2 {
+    background-color: aqua;
+}
+
+h1 {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+
+main {
+    /* background-color: aqua; */
+    width: 90%;
+    max-width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+form {
+    /* background-color: blueviolet; */
+    width: 100%;
+    /*Largura do elemento*/
+    height: 100%;
+    /*Altura do elemento*/
+    display: flex;
+    /*Torna os filhos do elemento pai flexivel*/
+    flex-direction: column;
+    /*Muda a direção do elementos filhos*/
+}
+
+#div_conversa {
+    background-color: transparent;
+    width: 100%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 81px;
+    /*espaço entre os filhos*/
+    padding: 1%;
+    overflow-y: scroll;
+    /*coloca barra de rolagem no eixo y*/
+}
+
+.div_card_conversa {
+    width: 100%;
+    display: flex;
+}
+
+.div_card_conversa_chat {
+    /* background-color: bisque; */
+    justify-content: flex-start;
+}
+
+.div_card_conversa_usuario {
+    /* background-color: brown; */
+    justify-content: flex-end;
+}
+
+.div_card_conversa>p {
+    background-color: var(--branco);
+    width: 100%;
+    max-width: 550px;
+    min-height: 71px;
+    border-radius: 7px;
+    padding: 1%;
+
+    color: var(--preto);
+    /*cor da fonte*/
+    font-weight: 400;
+    /*espessura da fonte*/
+    font-size: 16px;
+}
+
+#footer_pergunta {
+    /* background-color: chartreuse; */
+    width: 100%;
+}
+
+#footer_pergunta>div {
+    background-color: var(--branco);
+    width: 100%;
+    height: 79px;
+    border-radius: 7px;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 1%;
+}
+
+#footer_pergunta>div>button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    /*Mudar o tipo do cursor*/
+}
+
+#footer_pergunta>div>textarea {
+    border: none;
+    /*Removendo as bordas que vem por padrão*/
+    outline: none;
+    /*Removendo as bordas ao clicar no campo*/
+    resize: none;
+    /*Impossibilitando o usuário a redimensionar*/
+
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 1%;
+}
+
+#footer_pergunta div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+textarea {
+    flex: 1;
+    resize: none;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.img_icone {
+    width: 24px;
+    height: 24px;
+}
